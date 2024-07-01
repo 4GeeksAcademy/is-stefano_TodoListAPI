@@ -101,25 +101,16 @@ export const TodoListApi = () => {
     }, []);
 
     return (
-        <div className="container">
+        <div className="container col-sm-5">
             <h1 className="text-center my-2">Todo List</h1>
             <form onSubmit={handleAddTodo}>
                 <h3>Listado de tareas de <span className="text-primary">{user}</span></h3>
                 <div className="input-group mb-3">
                     <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Añadir tarea"
-                        aria-label="Recipient's username"
-                        aria-describedby="button-addon2"
-                        value={task}
-                        onChange={(event) => setTask(event.target.value)}
-                    />
+                        type="text" className="form-control" placeholder="Añadir tarea" aria-label="Recipient's username"
+                        aria-describedby="button-addon2" value={task}onChange={(event) => setTask(event.target.value)}/>
                     <button
-                        className="btn btn-outline-primary"
-                        type="submit"
-                        id="button-addon2"
-                    >
+                        className="btn btn-outline-primary" type="submit" id="button-addon2">
                         <i className="fas fa-arrow-right"></i>
                     </button>
                 </div>
